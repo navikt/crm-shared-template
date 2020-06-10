@@ -1,6 +1,6 @@
 Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps after using template:
 
-1. Update README.md (this file)
+1. Update `README.md` (this file)
 2. Add secrets
     - INTEGRATION_SANDBOX_SFDX_URL
     - PACKAGE_KEY
@@ -12,7 +12,7 @@ Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps aft
     - Add `{"defaultdevhubusername": "[your_devhub_user]","defaultusername": "" }` to it and change the DevHub username
 4. Create a package in SFDX
     - `sfdx force:package:create -n YourPackageName -t Unlocked -r force-app`
-5. Push changes made to README.md and sfdx-project.json
+5. Push changes made to `README.md` and `sfdx-project.json`
 
 # crm-arbeidsgiver-template
 
