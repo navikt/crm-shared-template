@@ -12,7 +12,9 @@ Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps aft
     - Add `{"defaultdevhubusername": "[your_devhub_user]","defaultusername": "" }` to it and change the DevHub username
 4. Create a package in SFDX
     - `sfdx force:package:create -n YourPackageName -t Unlocked -r force-app`
-5. Push changes made to `README.md` and `sfdx-project.json`
+5. Create an init release in GitHub
+6. Push changes made to `README.md` and `sfdx-project.json`
+7. Create a [Deployment issue](https://github.com/navikt/crm-arbeidsgiver-template/issues/1) (copy text and just create an issue)
 
 # crm-arbeidsgiver-template
 
