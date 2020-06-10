@@ -8,7 +8,9 @@ Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps aft
     - PROD_SFDX_URL
     - REPO_ACCESS_TOKEN
     - SLACK_WEBHOOK
-3. Create a package in SFDX
+3. Create file `.sfdx/sfdx-config.json`
+    - Add `{"defaultdevhubusername": "[your_devhub_user]","defaultusername": "" }` to it and change the DevHub username
+4. Create a package in SFDX
     - `sfdx force:package:create -n YourPackageName -t Unlocked -r force-app`
 
 # crm-arbeidsgiver-template
