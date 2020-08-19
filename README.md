@@ -1,9 +1,10 @@
 Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps after using template:
 
 1. Update `README.md` (this file)
-2. Add secrets
+2. Add secrets (see (description)[https://github.com/navikt/crm-workflows-base])
     - INTEGRATION_SANDBOX_SFDX_URL
     - PACKAGE_KEY
+    - DEPLOYMENT_PAT
     - PREPROD_SFDX_URL
     - PROD_SFDX_URL
     - REPO_ACCESS_TOKEN
