@@ -2,12 +2,15 @@ Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps aft
 
 1. Update `README.md` (this file)
 2. Add secrets (see [description](https://github.com/navikt/crm-workflows-base))
-    - PROD_SFDX_URL
-    - PREPROD_SFDX_URL
-    - INTEGRATION_SANDBOX_SFDX_URL
-    - PACKAGE_KEY
-    - DEPLOYMENT_PAT
-    - SLACK_WEBHOOK
+    - PROD_SFDX_URL ```[REQUIRED]```
+    - PREPROD_SFDX_URL ```[REQUIRED]```
+    - INTEGRATION_SANDBOX_SFDX_URL ```[REQUIRED]```
+    - PACKAGE_KEY ```[REQUIRED]```
+    - DEPLOYMENT_PAT ```[REQUIRED]```
+    - UAT_SFDX_URL ```[OPTIONAL]```
+    - DEV_SFDX_URL ```[OPTIONAL]```
+    - DEPLOY_TO_DEV_AFTER_PACKAGE_CREATION ```[OPTIONAL]```
+    - DEPLOY_TO_UAT_AFTER_PACKAGE_CREATION ```[OPTIONAL]```
 3. Create file `.sfdx/sfdx-config.json`
     - Add `{"defaultdevhubusername": "[your_devhub_user]","defaultusername": "" }` to it and change the DevHub username
 4. Create a package in SFDX
