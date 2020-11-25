@@ -30,8 +30,8 @@ Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps aft
 
 Pakken er avhengig av følgende pakker:
 
-* XXXXXXXXXXXXX(https://github.com/navikt/XXXXXXXXXXXXX)
-* XXXXXXXXXXXXX(https://github.com/navikt/XXXXXXXXXXXXX)
+* [XXXXXXXXXXXXX](https://github.com/navikt/XXXXXXXXXXXXX)
+* [XXXXXXXXXXXXX](https://github.com/navikt/XXXXXXXXXXXXX)
 
 
 ## Komme i gang
