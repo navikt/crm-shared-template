@@ -1,7 +1,6 @@
 Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps after using template:
 
-1. Update `README.md` (this file)
-2. Add secrets (see [description](https://github.com/navikt/crm-workflows-base))
+1. Add secrets (see [description](https://github.com/navikt/crm-workflows-base))
     - PROD_SFDX_URL ```[REQUIRED]```
     - PREPROD_SFDX_URL ```[REQUIRED]```
     - INTEGRATION_SANDBOX_SFDX_URL ```[REQUIRED]```
@@ -11,13 +10,13 @@ Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps aft
     - DEV_SFDX_URL ```[OPTIONAL]```
     - DEPLOY_TO_DEV_AFTER_PACKAGE_CREATION ```[OPTIONAL]```
     - DEPLOY_TO_UAT_AFTER_PACKAGE_CREATION ```[OPTIONAL]```
-3. Create file `.sfdx/sfdx-config.json`
+2. Create file `.sfdx/sfdx-config.json`
     - Add `{"defaultdevhubusername": "[your_devhub_user]","defaultusername": "" }` to it and change the DevHub username
-4. Create a package in SFDX
+3. Create a package in SFDX
     - `sfdx force:package:create -n YourPackageName -t Unlocked -r force-app`
-5. Create an init release in GitHub
+4. Create an init release in GitHub
+5. Update `README.md` (this file)
 6. Push changes made to `README.md` and `sfdx-project.json`
-7. Create a [Deployment issue](https://github.com/navikt/crm-arbeidsgiver-template/issues/1) (copy text and just create an issue)
 
 # crm-arbeidsgiver-template
 
