@@ -20,7 +20,7 @@ Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps aft
 
 # crm-arbeidsgiver-template
 
-[![Build](https://github.com/navikt/XXXXXXXXXXXXX/workflows/master/badge.svg)](https://github.com/navikt/XXXXXXXXXXXXX/actions?query=workflow%3ABuild)
+[![Build](https://github.com/navikt/XXXXXXXXXXXXX/workflows/%5BPUSH%5D%20Create%20Package/badge.svg)](https://github.com/navikt/XXXXXXXXXXXXX/actions?query=workflow%3Acreate)
 [![GitHub version](https://badgen.net/github/release/navikt/XXXXXXXXXXXXX/stable)](https://github.com/navikt/XXXXXXXXXXXXX)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/navikt/XXXXXXXXXXXXX/blob/master/LICENSE)
 
