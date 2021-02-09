@@ -1,15 +1,15 @@
 Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps after using template:
 
 1. Add secrets (see [description](https://github.com/navikt/crm-workflows-base))
-    - PROD_SFDX_URL ```[REQUIRED]```
-    - PREPROD_SFDX_URL ```[REQUIRED]```
-    - INTEGRATION_SANDBOX_SFDX_URL ```[REQUIRED]```
-    - PACKAGE_KEY ```[REQUIRED]```
-    - DEPLOYMENT_PAT ```[REQUIRED]```
-    - UAT_SFDX_URL ```[OPTIONAL]```
-    - DEV_SFDX_URL ```[OPTIONAL]```
-    - DEPLOY_TO_DEV_AFTER_PACKAGE_CREATION ```[OPTIONAL]```
-    - DEPLOY_TO_UAT_AFTER_PACKAGE_CREATION ```[OPTIONAL]```
+    - PROD_SFDX_URL `[REQUIRED]`
+    - PREPROD_SFDX_URL `[REQUIRED]`
+    - INTEGRATION_SANDBOX_SFDX_URL `[REQUIRED]`
+    - PACKAGE_KEY `[REQUIRED]`
+    - DEPLOYMENT_PAT `[REQUIRED]`
+    - UAT_SFDX_URL `[OPTIONAL]`
+    - DEV_SFDX_URL `[OPTIONAL]`
+    - DEPLOY_TO_DEV_AFTER_PACKAGE_CREATION `[OPTIONAL]`
+    - DEPLOY_TO_UAT_AFTER_PACKAGE_CREATION `[OPTIONAL]`
 2. Create file `.sfdx/sfdx-config.json`
     - Add `{"defaultdevhubusername": "[your_devhub_user]","defaultusername": "" }` to it and change the DevHub username
 3. Create a package in SFDX
@@ -24,44 +24,31 @@ Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps aft
 [![GitHub version](https://badgen.net/github/release/navikt/XXXXXXXXXXXXX/stable)](https://github.com/navikt/XXXXXXXXXXXXX)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/navikt/XXXXXXXXXXXXX/blob/master/LICENSE)
 
-[DESCRIPTION]
-
 ## Dependencies
 
-Pakken er avhengig av følgende pakker:
+This package is dependant on the following packages
 
-* [XXXXXXXXXXXXX](https://github.com/navikt/XXXXXXXXXXXXX)
-* [XXXXXXXXXXXXX](https://github.com/navikt/XXXXXXXXXXXXX)
+-   [XXXXXXXXXXXXX](https://github.com/navikt/XXXXXXXXXXXXX)
+-   [XXXXXXXXXXXXX](https://github.com/navikt/XXXXXXXXXXXXX)
 
+## Installation
 
-## Komme i gang
+1. Install [npm](https://nodejs.org/en/download/)
+1. Install [Salesforce DX CLI](https://developer.salesforce.com/tools/sfdxcli)
+    - Alternative: `npm install sfdx-cli --global`
+1. Clone this repository ([GitHub Desktop](https://desktop.github.com) is recommended for non-developers)
+1. Run `npm install` from the project root folder
+1. Install [SSDX](https://github.com/navikt/ssdx)
+    - **Non-developers may stop after this step**
+1. Install [VS Code](https://code.visualstudio.com) (recommended)
+    - Install [Salesforce Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
+    - **Install recommended plugins!** A notification should appear when opening VS Code. It will prompt you to install recommended plugins.
+1. Install [AdoptOpenJDK](https://adoptopenjdk.net) (only version 8 or 11)
+1. Open VS Code settings and search for `salesforcedx-vscode-apex`
+1. Under `Java Home`, add the following:
+    - macOS: `/Library/Java/JavaVirtualMachines/adoptopenjdk-[VERSION_NUMBER].jdk/Contents/Home`
+    - Windows: `C:\\Program Files\\AdoptOpenJDK\\jdk-[VERSION_NUMBER]-hotspot`
 
-1. Salesforce DX-bruker. Kontakt #crm-plattform-team på Slack om du ikke har dette
-2. Installer Salesforce DX CLI (SFDX)
-	- Last ned fra [Salesforce.com](https://developer.salesforce.com/tools/sfdxcli)
-    - Eller benytt npm: `npm install sfdx-cli --global`
-3. Klon dette repoet ([GitHub Desktop](https://desktop.github.com) anbefales for ikke-utviklere)
-4. Installer [SSDX](https://github.com/navikt/ssdx)
-    - Med SSDX kan du lage scratch orger og gjøre deklarative endringer (gjøre endringer i nettleseren på Salesforce, altså ikke-utvikling)
-	- **Trenger du ikke verktøy utvikling kan du stoppe her**
-5. Installer [VS Code](https://code.visualstudio.com) (anbefalt)
-6. Installer [Salesforce Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
-7. Installer [AdoptOpenJDK](https://adoptopenjdk.net) (kun versjon 8 eller 11)
-8. Åpne VS Code Settings og søk etter `salesforcedx-vscode-apex`
-9. Under `Java Home`, legg inn følgende:
-    - macOS: `/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home`
-    - Windows: `C:\\Program Files\\AdoptOpenJDK\\jdk-11.0.3.7-hotspot` (merk at versjonsnummer kan endre seg)
+## Other
 
-## Utvikling
-
-Utvikling foregår i hovedsak på to fronter, i nettleseren i din scratch org og på din maskin i din prefererte IDE. Ved endringer i nettleseren på din scratch org (som lever i skyen), så må alle endringer pulles til din maskin. Ved endringer av metadata i din IDE, må endringer pushes til din scratch org.
-
-Ved å bruke VS Code som IDE, er det lagt inn konfigurasjon som automatisk pusher endringer av metadata til din scratch org ved lagring. For å pulle endringer fra kan man enten bruke Salesforce DX CLI til å pulle, men også pushe om man ikke ønsker automatisk push. Se under for kommandoer. Man kan også bruke hjelpeverktøyet SSDX (nevnt over) for å pushe, pulle, åpne scratch org-er, slette gamle, blant annet.
-
-* `sfdx force:org:open` for å åpne instansen(salesforce applikasjonen din).
-* `sfdx force:source:pull` for å hente endringer som du gjør i konfigurasjon i applikasjonen online.
-* `sfdx force:source:push` for å publisere endringer du gjør i kode lokalt til applikasjonen online.
-
-## Annet
-
-For spørsmål om denne applikasjonen, bruk #arbeidsgiver-crm på Slack.
+Questions? Ask on #arbeidsgiver-crm on Slack.
