@@ -1,24 +1,24 @@
-Template repository for PO Arbeidsgiver Salesforce packages. Necessary steps after using template:
+Template repository for CRM packages. Necessary steps after using template:
 
 1. Add secrets (see [description](https://github.com/navikt/crm-workflows-base))
-    - PROD_SFDX_URL `[REQUIRED]`
-    - PREPROD_SFDX_URL `[REQUIRED]`
-    - INTEGRATION_SANDBOX_SFDX_URL `[REQUIRED]`
+    - PROD_SFDX_URL `[REQUIRED]` (contact #crm-platform-team on Slack)
+    - PREPROD_SFDX_URL `[REQUIRED]` (contact #crm-platform-team on Slack)
+    - INTEGRATION_SANDBOX_SFDX_URL `[REQUIRED]` (contact #crm-platform-team on Slack)
     - PACKAGE_KEY `[REQUIRED]`
     - DEPLOYMENT_PAT `[REQUIRED]`
     - UAT_SFDX_URL `[OPTIONAL]`
     - DEV_SFDX_URL `[OPTIONAL]`
     - DEPLOY_TO_DEV_AFTER_PACKAGE_CREATION `[OPTIONAL]`
     - DEPLOY_TO_UAT_AFTER_PACKAGE_CREATION `[OPTIONAL]`
-2. Create file `.sfdx/sfdx-config.json`
+2. Create file `.sfdx/sfdx-config.json` (to create package)
     - Add `{"defaultdevhubusername": "[your_devhub_user]","defaultusername": "" }` to it and change the DevHub username
 3. Create a package in SFDX
     - `sfdx force:package:create -n YourPackageName -t Unlocked -r force-app`
-4. Create an init release in GitHub
-5. Update `README.md` (this file)
-6. Push changes made to `README.md` and `sfdx-project.json`
+    - If you receive an error, contact #crm-platform-team on Slack to create the package
+4. Create an init release in GitHub (not pre-release)
+5. Push changes made to `sfdx-project.json` (remember to fetch Package ID if #crm-platform-team creates the package)
 
-# crm-arbeidsgiver-template
+# crm-shared-template
 
 [![Build](https://github.com/navikt/XXXXXXXXXXXXX/workflows/%5BPUSH%5D%20Create%20Package/badge.svg)](https://github.com/navikt/XXXXXXXXXXXXX/actions?query=workflow%3Acreate)
 [![GitHub version](https://badgen.net/github/release/navikt/XXXXXXXXXXXXX/stable)](https://github.com/navikt/XXXXXXXXXXXXX)
@@ -51,4 +51,4 @@ This package is dependant on the following packages
 
 ## Other
 
-Questions? Ask on #arbeidsgiver-crm on Slack.
+Questions? Ask on #crm-platform-team on Slack.
