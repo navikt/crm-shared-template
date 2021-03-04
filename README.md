@@ -5,7 +5,7 @@ Template repository for CRM packages. Necessary steps after using template:
     - PREPROD_SFDX_URL `[REQUIRED]` (contact #crm-platform-team on Slack)
     - INTEGRATION_SANDBOX_SFDX_URL `[REQUIRED]` (contact #crm-platform-team on Slack)
     - PACKAGE_KEY `[REQUIRED]`
-    - DEPLOYMENT_PAT `[REQUIRED]`
+    - DEPLOYMENT_PAT `[REQUIRED]` ([documentation](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token), give repo access)
     - UAT_SFDX_URL `[OPTIONAL]`
     - DEV_SFDX_URL `[OPTIONAL]`
     - DEPLOY_TO_DEV_AFTER_PACKAGE_CREATION `[OPTIONAL]`
