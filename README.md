@@ -53,8 +53,10 @@ This package is dependant on the following packages
 
 ## Build
 
+To build locally without using SSDX, do the following:
+
 1. If you haven't authenticated a DX user to production / DevHub, run `sfdx auth:web:login -d -a production` and log in
-    - Ask #crm-platform-team on Slack if you don't have a user
+    - Ask `#crm-platform-team` on Slack if you don't have a user
     - If you change from one repo to another, you can change the default DevHub username in `.sfdx/sfdx-config.json`, but you can also just run the command above
 1. Create a scratch org, install dependencies and push metadata:
 
