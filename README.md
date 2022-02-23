@@ -20,11 +20,18 @@ Template repository for CRM packages. Necessary steps after using template:
 5. Create an test metadata file in `force-app` folder to initiate init package creation (can be just a CustomLabel file)
 6. Push changes made to `force-app` and `sfdx-project.json` (remember to fetch Package ID if #crm-platform-team creates the package)
 
-# crm-shared-template
+Navn på prosjekt
+================
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/navikt/crm-shared-template/blob/master/LICENSE)
 
-[![Build](https://github.com/navikt/XXXXXXXXXXXXX/workflows/%5BPUSH%5D%20Create%20Package/badge.svg)](https://github.com/navikt/XXXXXXXXXXXXX/actions?query=workflow%3Acreate)
-[![GitHub version](https://badgen.net/github/release/navikt/XXXXXXXXXXXXX/stable)](https://github.com/navikt/XXXXXXXXXXXXX)
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/navikt/XXXXXXXXXXXXX/blob/master/LICENSE)
+
+Kort beskrivelse av hva prosjektet dreier seg om.
+
+# Komme i gang
+
+Hvordan bygge, teste og kjøre koden viss aktuelt.
+
+---
 
 ## Dependencies
 
@@ -69,6 +76,14 @@ sfdx force:source:push
 sfdx force:org:open
 ```
 
-## Other
+# Henvendelser
 
-Questions? Ask on #crm-platform-team on Slack.
+Enten:
+Spørsmål knyttet til koden eller prosjektet kan stilles som issues her på GitHub
+
+Eller:
+Spørsmål knyttet til koden eller prosjektet kan stilles til teamalias@nav.no
+
+## For NAV-ansatte
+
+Interne henvendelser kan sendes via Slack i kanalen #teamkanal.
