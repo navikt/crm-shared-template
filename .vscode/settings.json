@@ -1,5 +1,4 @@
 {
-    "salesforcedx-vscode-apex.enable-sobject-refresh-on-startup": true,
     "salesforcedx-vscode-apex.enable-semantic-errors": true,
     "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
     "salesforcedx-vscode-core.push-or-deploy-on-save.enabled": true,
