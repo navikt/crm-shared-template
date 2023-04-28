@@ -1,17 +1,4 @@
 {
     "recommendations": [
-        "salesforce.salesforcedx-vscode-expanded",
-        "aaron-bond.better-comments",
-        "ChakrounAnas.turbo-console-log",
-        "donjayamanne.githistory",
-        "eamodio.gitlens",
-        "hnw.vscode-auto-open-markdown-preview",
-        "IBM.output-colorizer",
-        "VignaeshRamA.sfdx-package-xml-generator",
-        "xabikos.JavaScriptSnippets",
-        "nik-creation.lwc-salesforce",
-        "allanoricil.salesforce-schema-builder",
-        "allanoricil.salesforce-soql-editor",
-        "vscode-icons-team.vscode-icons"
     ]
 }

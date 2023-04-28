@@ -20,5 +20,5 @@
         }
     },
 
-    "plugins": ["@lwc/eslint-plugin-lwc"]
+    "plugins": ["@lwc/eslint-plugin-lwc", "@salesforce/eslint-config-lwc/i18n"]
 }
